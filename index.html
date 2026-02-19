@@ -91,6 +91,7 @@ function resizeScreen(){
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
+              <a class="dropdown-item" onclick="init('2025')" href="#">2025</a>
               <a class="dropdown-item" onclick="init('2020-2024')" href="#">2020-2024</a>
               <a class="dropdown-item" onclick="init('2013-2019')" href="#">2013-2019</a>
               <a class="dropdown-item" onclick="init('2008-2012')" href="#">2008-2012</a>
@@ -173,9 +174,9 @@ var divList = [];
 var imgCache = [];
 var imgCount = 0;
 
-const image_count = {'2004-2007':3, '2008-2012': 32, '2013-2019': 33, '2020-2024': 23}
+const image_count = {'2004-2007':3, '2008-2012': 32, '2013-2019': 33, '2020-2024': 23, '2025': 47}
 const image_dirs = {'Current Work': 'current', 'France': 'france', 'Cambridge': 'cambridge'}
-var work = '2020-2024';
+var work = '2025';
 
 
 var currentImg = 0;
@@ -247,7 +248,7 @@ function loadImage(idx){
   divList[idx].append(img);
 }
 
-init('2020-2024');
+init('2025');
 
 
 
